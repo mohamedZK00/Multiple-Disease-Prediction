@@ -101,7 +101,7 @@ if(selected == 'Diabetes Prediction'):
             # فتح الصورة وعرضها باستخدام Streamlit
             try:
                 image1 = Image.open(image_path1)
-                st.image(image1, caption='Heart Disease ', use_column_width=True , width=250)
+                st.image(image1, caption='Heart Disease',  width=250)
             except Exception as e:
                 st.error(f"Error opening image: {e}")
                 
@@ -117,11 +117,11 @@ if(selected == 'Diabetes Prediction'):
             st.success(diab_prediction)
             #st.image("E:\Pro_Stremlit بالعربي\image\heart-strong.png",width=250)
             #st.image("image Multiple disease\heart-strong.png",width=250)
-            image_path2 = 'imageMultipledisease/heart-strong.png'
+            image_path2 = 'imageMultipledisease/heart-strong.png' , 
             # فتح الصورة وعرضها باستخدام Streamlit
             try:
                 image2 = Image.open(image_path2)
-                st.image(image2, caption='Heart Strong ', use_column_width=True , width=250)
+                st.image(image2, caption='Heart Strong', width=250)
             except Exception as e:
                 st.error(f"Error opening image: {e}")
                 
