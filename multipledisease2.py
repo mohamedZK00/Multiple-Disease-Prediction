@@ -193,11 +193,10 @@ if (selected =='Heart Disease Prediction' ):
             #st.image("E:\Pro_Stremlit بالعربي\image\hrtdiseas.png.jpg",width=250)
             #st.image("image Multiple disease\hrtdiseas.png.jpg",width=250)
             image_path4 = r'imageMultipledisease/hrtdiseas.png.jpg.png'
-
             # فتح الصورة وعرضها باستخدام Streamlit
             try:
                 image4 = Image.open(image_path4)
-                st.image(image4, caption='Heart Disease', use_column_width=True , width=250)
+                st.image(image4, caption='Heart Disease' , width=250)
             except Exception as e:
                 st.error(f"Error opening image: {e}")
                 
