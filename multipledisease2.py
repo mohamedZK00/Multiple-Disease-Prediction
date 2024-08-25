@@ -123,7 +123,8 @@ if (selected =='Heart Disease Prediction' ):
     st.title("Heart Disease Prediction using Machine Learning(ML)")
     #st.image("E:\Pro_Stremlit بالعربي\image\heart_Disease_image.png")
     #st.image("imageMultipledisease\heart_Disease_image.png")
-    image_path1 = 'imageMultipledisease\heart_Disease_image.png'
+    #image_path1 = 'imageMultipledisease\heart_Disease_image.png'
+    image_path1 = 'imageMultipledisease/heart_Disease_image.png'
 
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
