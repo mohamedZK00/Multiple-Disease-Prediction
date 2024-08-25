@@ -124,7 +124,7 @@ if (selected =='Heart Disease Prediction' ):
     #st.image("E:\Pro_Stremlit بالعربي\image\heart_Disease_image.png")
     #st.image("imageMultipledisease\heart_Disease_image.png")
     #image_path1 = 'imageMultipledisease\heart_Disease_image.png'
-    image_path1 = 'imageMultipledisease\heart_Disease_image.png'
+    image_path1 = r'imageMultipledisease/heart_Disease_image.png'
 
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
@@ -207,7 +207,7 @@ if (selected == 'Parkinsons Prediction'):
     st.title("Parkinsons Prediction using Machine Learning(ML)")
     #st.image("E:\Pro_Stremlit بالعربي\image\Parkinsons_hmage.jpg")
     #st.image("imageMultipledisease\Parkinsons_hmage.jpg")
-    image_path2 = 'imageMultipledisease\Parkinsons_hmage.jpg'
+    image_path2 = r'imageMultipledisease/Parkinsons_hmage.jpg'
 
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
