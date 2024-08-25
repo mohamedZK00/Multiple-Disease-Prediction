@@ -50,7 +50,7 @@ if(selected == 'Diabetes Prediction'):
     # page title
     st.title("Diabetes Prediction using Machine Learning(ML)")
     #st.image("E:\Pro_Stremlit بالعربي\image\diabetes_image.png")
-    st.image("image Multiple disease\diabetes_image.png")
+    st.image("imageMultipledisease\diabetes_image.png")
     
     s = 'Pregnancies 	Glucose 	BloodPressure 	SkinThickness 	Insulin 	BMI 	DiabetesPedigreeFunction 	Age'
 
@@ -87,7 +87,7 @@ if(selected == 'Diabetes Prediction'):
             diab_prediction = 'The person is Diabetic'
             st.success(diab_prediction)
             #st.image("E:\Pro_Stremlit بالعربي\image\heart_diabetic.png",width=250)
-            st.image("image Multiple disease\heart_diabetic.png",width=250)
+            st.image("imageMultipledisease\heart_diabetic.png",width=250)
             st.info(""" 
         Dear patient, don't worry! We are here to help you manage diabetes.
         You can maintain your health and successfully manage diabetes by following a healthy diet and exercising regularly. 
@@ -99,7 +99,7 @@ if(selected == 'Diabetes Prediction'):
             diab_prediction = 'The Person is Not Diabetic'
             st.success(diab_prediction)
             #st.image("E:\Pro_Stremlit بالعربي\image\heart-strong.png",width=250)
-            st.image("image Multiple disease\heart-strong.png",width=250)
+            st.image("imageMultipledisease\heart-strong.png",width=250)
             st.info("""
         Congratulations! You are not diagnosed with diabetes.
         To maintain your health and prevent this disease, we recommend following a balanced diet and exercising regularly.
@@ -113,7 +113,7 @@ if(selected == 'Diabetes Prediction'):
 if (selected =='Heart Disease Prediction' ):
     st.title("Heart Disease Prediction using Machine Learning(ML)")
     #st.image("E:\Pro_Stremlit بالعربي\image\heart_Disease_image.png")
-    st.image("image Multiple disease\heart_Disease_image.png")
+    st.image("imageMultipledisease\heart_Disease_image.png")
     
     # H = Age 	Sex 	ChestPainType 	RestingBP 	Cholesterol 	FastingBS 	RestingECG 	MaxHR 	ExerciseAngina 	Oldpeak 	ST_Slope
     col1,col2,col3 = st.columns(3)
@@ -157,7 +157,7 @@ if (selected =='Heart Disease Prediction' ):
             heart_pred = 'The Person is Disease'
             st.success(heart_pred)
             #st.image("E:\Pro_Stremlit بالعربي\image\hrtdiseas.png.jpg",width=250)
-            st.image("image Multiple disease\hrtdiseas.png.jpg",width=250)
+            st.image("imageMultipledisease\hrtdiseas.png.jpg",width=250)
             
             st.info( """
         Dear patient, don't be discouraged! We are here to support you in managing heart disease.
@@ -170,7 +170,7 @@ if (selected =='Heart Disease Prediction' ):
             heart_pred = 'The Person is Not Disease'
             st.success(heart_pred)
             #st.image("E:\Pro_Stremlit بالعربي\image\heart-strong.png",width=250)
-            st.image("image Multiple disease\heart-strong.png",width=250)
+            st.image("imageMultipledisease\heart-strong.png",width=250)
             
             st.info("""
         Great news! You are not diagnosed with heart disease.
@@ -188,7 +188,7 @@ if (selected =='Heart Disease Prediction' ):
 if (selected == 'Parkinsons Prediction'):
     st.title("Parkinsons Prediction using Machine Learning(ML)")
     #st.image("E:\Pro_Stremlit بالعربي\image\Parkinsons_hmage.jpg")
-    st.image("image Multiple disease\Parkinsons_hmage.jpg")
+    st.image("imageMultipledisease\Parkinsons_hmage.jpg")
     
 
     park_columns = [''' MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz), MDVP:Jitter(%), MDVP:Jitter(Abs), MDVP:RAP, MDVP:PPQ,
