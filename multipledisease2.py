@@ -124,7 +124,7 @@ if (selected =='Heart Disease Prediction' ):
     #st.image("E:\Pro_Stremlit بالعربي\image\heart_Disease_image.png")
     #st.image("imageMultipledisease\heart_Disease_image.png")
     #image_path1 = 'imageMultipledisease\heart_Disease_image.png'
-    image_path1 = 'imageMultipledisease/heart_Disease_image.png'
+    image_path1 = 'imageMultipledisease\heart_Disease_image.png'
 
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
