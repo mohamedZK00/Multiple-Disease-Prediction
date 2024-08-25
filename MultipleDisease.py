@@ -84,7 +84,8 @@ if(selected == 'Diabetes Prediction'):
             diab_prediction = 'The person is Diabetic'
             st.success(diab_prediction)
             #st.image("E:\Pro_Stremlit بالعربي\image\heart_diabetic.png",width=250)
-	    st.image("image Multiple disease\heart_diabetic.png",width=250)
+	    #st.image("image Multiple disease\heart_diabetic.png",width=250)
+	    st.image("image Multiple disease/heart_diabetic.png", width=250)
             st.info(""" 
         Dear patient, don't worry! We are here to help you manage diabetes.
         You can maintain your health and successfully manage diabetes by following a healthy diet and exercising regularly. 
