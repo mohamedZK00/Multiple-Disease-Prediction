@@ -3,9 +3,37 @@ from streamlit_option_menu import option_menu as om
 import pandas as pd
 import pickle 
 
-model_Diabetes = pickle.load(open(r"E:\Pro_Stremlit بالعربي\Model Saving\Diabetes_prediction_RFR_83%.sav",'rb'))
-model_Heart = pickle.load(open(r"E:\Pro_Stremlit بالعربي\Model Saving\Heart_prediction_Vottingclf_90%.sav",'rb'))
-model_Parkinsons = pickle.load(open(r"E:\Pro_Stremlit بالعربي\Model Saving\Parkinsons_Prediction_Stacking_95%.sav",'rb'))
+#model_Diabetes = pickle.load(open(r"E:\Pro_Stremlit بالعربي\Model Saving\Diabetes_prediction_RFR_83%.sav",'rb'))
+#model_Heart = pickle.load(open(r"E:\Pro_Stremlit بالعربي\Model Saving\Heart_prediction_Vottingclf_90%.sav",'rb'))
+#model_Parkinsons = pickle.load(open(r"E:\Pro_Stremlit بالعربي\Model Saving\Parkinsons_Prediction_Stacking_95%.sav",'rb'))
+
+# Load the prediction model-1
+working_dir1 = os.path.dirname(os.path.realpath(__file__))
+model_path1 = os.path.join(working_dir1, 'models/Diabetes_prediction_RFR_83%.sav')
+
+with open(model_path1, 'rb') as f:
+    model_Diabetes = pickle.load(f)
+
+
+# Load the prediction model-2
+working_dir2 = os.path.dirname(os.path.realpath(__file__))
+model_path2 = os.path.join(working_dir2, 'models/Heart_prediction_Vottingclf_90%.sav')
+
+with open(model_path2, 'rb') as g:
+    model_Heart = pickle.load(g)
+
+
+# Load the prediction model-3
+working_dir3 = os.path.dirname(os.path.realpath(__file__))
+model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_Stacking_95%.sav')
+
+with open(model_path3, 'rb') as h:
+    model_Parkinsons = pickle.load(h)
+
+
+
+
+
 
 
 # sidabar for navigate
