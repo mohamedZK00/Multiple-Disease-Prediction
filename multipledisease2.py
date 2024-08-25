@@ -97,8 +97,7 @@ if(selected == 'Diabetes Prediction'):
             st.success(diab_prediction)
             #st.image("E:\Pro_Stremlit بالعربي\image\heart_diabetic.png",width=250)
             #st.image("image Multiple disease\heart_diabetic.png",width=250)
-            image_path1 = 'imageMultipledisease/heart_diabetic.png'
-
+            image_path1 = r'imageMultipledisease/heart_diabetic.png'
             # فتح الصورة وعرضها باستخدام Streamlit
             try:
                 image1 = Image.open(image_path1)
