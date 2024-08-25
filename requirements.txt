@@ -1,7 +1,6 @@
-Streamlit
-scikit-learn
-streamlit-option-menu
-pickleshare
-numpy
-pandas
-Python==3.12.4
+streamlit==1.37.1
+scikit-learn==1.5.1
+streamlit-option-menu==0.3.13
+pickleshare==0.7.5
+numpy==2.1.0
+pandas==2.2.2
