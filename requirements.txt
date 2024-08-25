@@ -4,4 +4,4 @@ streamlit-option-menu
 pickleshare
 numpy
 pandas
-Python 3.12.4
+Python==3.12.4
