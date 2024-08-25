@@ -4,4 +4,3 @@ streamlit-option-menu==0.3.13
 pickleshare==0.7.5
 numpy==2.1.0
 pandas==2.2.2
-streamlit run Multiple _Disease.py
