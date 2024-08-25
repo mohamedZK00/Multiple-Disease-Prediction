@@ -192,7 +192,7 @@ if (selected =='Heart Disease Prediction' ):
             st.success(heart_pred)
             #st.image("E:\Pro_Stremlit بالعربي\image\hrtdiseas.png.jpg",width=250)
             #st.image("image Multiple disease\hrtdiseas.png.jpg",width=250)
-            image_path4 = r'imageMultipledisease/hrtdiseas.png.jpg.png'
+            image_path4 = r'imageMultipledisease/hrtdiseas.png.jpg'
             # فتح الصورة وعرضها باستخدام Streamlit
             try:
                 image4 = Image.open(image_path4)
