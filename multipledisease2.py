@@ -242,7 +242,7 @@ if (selected == 'Parkinsons Prediction'):
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
         image6 = Image.open(image_path6)
-        st.image(image6, caption='Parkinsons Image', use_column_width=True)
+        st.image(image6, caption='Parkinsons Image', use_column_width=False)
     except Exception as e:
         st.error(f"Error opening image: {e}")
     
