@@ -252,7 +252,7 @@ if (selected == 'Parkinsons Prediction'):
         NHR, HNR, RPDE, DFA, spread1, spread2, D2, PPE ''']
 
 
-    col1,col2,col3 = st.columns(3)
+    col1,col2,col3,col4,col5 = st.columns(5)
     
     with col1:
         f1 =  st.text_input("MDVP Fo(Hz)") 
@@ -260,29 +260,29 @@ if (selected == 'Parkinsons Prediction'):
         f2 =  st.text_input("MDVP Fhi(Hz)")
     with col3:
         f3 =  st.text_input("MDVP Flo(Hz)")
-    with col1:
+    with col4:
         f4 =  st.text_input("MDVP jitter(%)") 
-    with col2:
+    with col5:
         f5 =  st.text_input("MDVP jitter(Abs)")
-    with col3:
+    with col1:
         f6 =  st.text_input("MDVP RAP")
-    with col1:
+    with col2:
         f7 =  st.text_input("MDVP PPQ") 
-    with col2:
+    with col3:
         f8 =  st.text_input("jitter DDP")
-    with col3:
+    with col4:
         f9 =  st.text_input("MDVP Shimmer")
-    with col1:
+    with col5:
         f10 = st.text_input("MDVP Shimmer(dB)") 
-    with col2:
-        f11 = st.text_input("Shimmer APQ3")
-    with col3:
-        f12 = st.text_input("Shimmer APQ5")
     with col1:
-        f13 = st.text_input("MDVP APQ") 
+        f11 = st.text_input("Shimmer APQ3")
     with col2:
-        f14 = st.text_input("Shimmer DDA")
+        f12 = st.text_input("Shimmer APQ5")
     with col3:
+        f13 = st.text_input("MDVP APQ") 
+    with col4:
+        f14 = st.text_input("Shimmer DDA")
+    with col5:
         f15 = st.text_input("NHR")
     with col1:
         f16 = st.text_input("HNR")
@@ -290,13 +290,13 @@ if (selected == 'Parkinsons Prediction'):
         f17 = st.text_input("RPDE")
     with col3:
         f18 = st.text_input("DFA")
-    with col1:
+    with col4:
         f19 = st.text_input("spread1")
-    with col2:
+    with col5:
         f20 = st.text_input("spread2")
-    with col3:
-        f21 = st.text_input("D2") 
     with col1:
+        f21 = st.text_input("D2") 
+    with col2:
         f22 = st.text_input("PPE")   
         
     df_prk = pd.DataFrame({'MDVP Fo(Hz)':f1,'MDVP Fhi(Hz)':f2,'MDVP Flo(Hz)':f3,
