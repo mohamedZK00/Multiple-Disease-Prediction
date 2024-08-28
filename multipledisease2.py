@@ -303,12 +303,13 @@ if (selected == 'Parkinsons Prediction'):
       #  f22 = st.text_input("PPE")   
         
     df_prk = pd.DataFrame({'MDVP Fo(Hz)':f1,'HNR':f2,'spread1':f3,
-                          'spread2':f4,'PPE':f5,
+                          'spread2':f4,'PPE':f5
                          #  'MDVP RAP':f6,'MDVP PPQ':f7,'jitter DDP':f8,
                          #  'MDVP Shimmer':f9,'MDVP Shimmer(dB)':f10,'Shimmer APQ3':f11,'Shimmer APQ5':f12,
                         #   'MDVP APQ':f13,'Shimmer DDA':f14,'NHR':f15,
                        #    'HNR':f16,'RPDE':f17,'DFA':f18,'spread1':f19,'spread2':f20,
-                        #   'D2':f21,'PPE':f22,},index=[0])        
+                        #   'D2':f21,'PPE':f22
+			  },index=[0])        
         
         
     #codel for prediction 
