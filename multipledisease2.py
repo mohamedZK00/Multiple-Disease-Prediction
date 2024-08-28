@@ -24,7 +24,7 @@ with open(model_path2, 'rb') as g:
 
 # Load the prediction model-3
 working_dir3 = os.path.dirname(os.path.realpath(__file__))
-model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_Stacking_95%.sav')
+model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_XGBClassifier_92%.sav')
 with open(model_path3, 'rb') as h:
     model_Parkinsons = pickle.load(h)
 
@@ -238,7 +238,10 @@ if (selected == 'Parkinsons Prediction'):
     #st.image("E:\Pro_Stremlit بالعربي\image\Parkinsons_hmage.jpg")
     #st.image("imageMultipledisease\Parkinsons_hmage.jpg")
     image_path6 = r'imageMultipledisease/Parkinsons_hmage.jpg'
-
+	
+    st.write('119.992,  21.033,   -4.813031 ,   0.266482 ,    0.284654 -> 1')
+    st.write('214.289 , 21.209,   -5.724056 ,   0.190667 ,    0.148569 -> 0')
+    
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
         image6 = Image.open(image_path6)
