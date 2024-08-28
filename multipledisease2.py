@@ -24,8 +24,9 @@ with open(model_path2, 'rb') as g:
 
 # Load the prediction model-3
 working_dir3 = os.path.dirname(os.path.realpath(__file__))
-model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_XGBClassifier_92%.sav')
-#model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_Stacking_95%.sav')
+#model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_XGBClassifier_92%.sav')
+#model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_Stacking_95%.sav')Parkinsons_Prediction_stackingClassifier_92%.sav
+model_path3 = os.path.join(working_dir3, 'models/Parkinsons_Prediction_stackingClassifier_92%.sav')
 
 with open(model_path3, 'rb') as w:
     model_Parkinsons = pickle.load(w)
