@@ -252,60 +252,60 @@ if (selected == 'Parkinsons Prediction'):
         NHR, HNR, RPDE, DFA, spread1, spread2, D2, PPE ''']
 
 
-    col1,col2,col3,col4,col5 = st.columns(5)
-    
+    #col1,col2,col3,col4,col5 = st.columns(5)
+    col1,col2 = st.columns(2)
     with col1:
         f1 =  st.text_input("MDVP Fo(Hz)") 
     with col2:
-        f2 =  st.text_input("MDVP Fhi(Hz)")
-    with col3:
-        f3 =  st.text_input("MDVP Flo(Hz)")
-    with col4:
-        f4 =  st.text_input("MDVP jitter(%)") 
-    with col5:
-        f5 =  st.text_input("MDVP jitter(Abs)")
+        f2 =  st.text_input("HNR")
     with col1:
-        f6 =  st.text_input("MDVP RAP")
+        f3 =  st.text_input("spread1")
     with col2:
-        f7 =  st.text_input("MDVP PPQ") 
-    with col3:
-        f8 =  st.text_input("jitter DDP")
-    with col4:
-        f9 =  st.text_input("MDVP Shimmer")
-    with col5:
-        f10 = st.text_input("MDVP Shimmer(dB)") 
+        f4 =  st.text_input("spread2") 
     with col1:
-        f11 = st.text_input("Shimmer APQ3")
-    with col2:
-        f12 = st.text_input("Shimmer APQ5")
-    with col3:
-        f13 = st.text_input("MDVP APQ") 
-    with col4:
-        f14 = st.text_input("Shimmer DDA")
-    with col5:
-        f15 = st.text_input("NHR")
-    with col1:
-        f16 = st.text_input("HNR")
-    with col2:
-        f17 = st.text_input("RPDE")
-    with col3:
-        f18 = st.text_input("DFA")
-    with col4:
-        f19 = st.text_input("spread1")
-    with col5:
-        f20 = st.text_input("spread2")
-    with col1:
-        f21 = st.text_input("D2") 
-    with col2:
-        f22 = st.text_input("PPE")   
+        f5 =  st.text_input("PPE")
+    #with col1:
+       # f6 =  st.text_input("MDVP RAP")
+    #with col2:
+       # f7 =  st.text_input("MDVP PPQ") 
+    #with col3:
+       # f8 =  st.text_input("jitter DDP")
+    #with col4:
+     #   f9 =  st.text_input("MDVP Shimmer")
+   # with col5:
+       # f10 = st.text_input("MDVP Shimmer(dB)") 
+  #  with col1:
+        #f11 = st.text_input("Shimmer APQ3")
+   # with col2:
+   #     f12 = st.text_input("Shimmer APQ5")
+    #with col3:
+        #f13 = st.text_input("MDVP APQ") 
+   # with col4:
+     #   f14 = st.text_input("Shimmer DDA")
+    #with col5:
+      #  f15 = st.text_input("NHR")
+    #with col1:
+       # f16 = st.text_input("HNR")
+    #with col2:
+     #   f17 = st.text_input("RPDE")
+    #with col3:
+       # f18 = st.text_input("DFA")
+   # with col4:
+      #  f19 = st.text_input("spread1")
+   # with col5:
+     #   f20 = st.text_input("spread2")
+    #with col1:
+        #f21 = st.text_input("D2") 
+   # with col2:
+      #  f22 = st.text_input("PPE")   
         
-    df_prk = pd.DataFrame({'MDVP Fo(Hz)':f1,'MDVP Fhi(Hz)':f2,'MDVP Flo(Hz)':f3,
-                           'MDVP jitter(%)':f4,'MDVP jitter(Abs)':f5,
-                           'MDVP RAP':f6,'MDVP PPQ':f7,'jitter DDP':f8,
-                           'MDVP Shimmer':f9,'MDVP Shimmer(dB)':f10,'Shimmer APQ3':f11,'Shimmer APQ5':f12,
-                           'MDVP APQ':f13,'Shimmer DDA':f14,'NHR':f15,
-                           'HNR':f16,'RPDE':f17,'DFA':f18,'spread1':f19,'spread2':f20,
-                           'D2':f21,'PPE':f22,},index=[0])        
+    df_prk = pd.DataFrame({'MDVP Fo(Hz)':f1,'HNR':f2,'spread1':f3,
+                          'spread2':f4,'PPE':f5,
+                         #  'MDVP RAP':f6,'MDVP PPQ':f7,'jitter DDP':f8,
+                         #  'MDVP Shimmer':f9,'MDVP Shimmer(dB)':f10,'Shimmer APQ3':f11,'Shimmer APQ5':f12,
+                        #   'MDVP APQ':f13,'Shimmer DDA':f14,'NHR':f15,
+                       #    'HNR':f16,'RPDE':f17,'DFA':f18,'spread1':f19,'spread2':f20,
+                        #   'D2':f21,'PPE':f22,},index=[0])        
         
         
     #codel for prediction 
