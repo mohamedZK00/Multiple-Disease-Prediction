@@ -324,7 +324,7 @@ if (selected == 'Parkinsons Prediction'):
         prk_prd = model_Parkinsons.predict(df_prk)
         if (prk_prd[0] == 1):
             park_pred = "The person has Parkinson's disease"
-            st.success(park_pred())
+            st.success(park_pred)
             st.info("""
         Dear patient, we understand that a diagnosis of Parkinson's disease can be challenging. 
         Remember, you are not alone—we are here to support you every step of the way. 
