@@ -194,8 +194,8 @@ if (selected =='Heart Disease Prediction' ):
     #creating button of prediction
     pr2 = st.button("Heart Test result")
 
-    st.write('1 , 1  ,2  ,0  ,2  ,37  ,130  ,283  ,0  ,98   ,0.0  ==> 0')
-    st.write('0  ,0  ,1  ,1  ,1  ,48  ,138  ,214  ,0  ,108  ,1.5  ==> 1')	
+    st.write('37age  ,1 , 1  ,2  ,0  ,2  ,130  ,283  ,0  ,98   ,0.0  ==> 0')
+    st.write('48age  ,0  ,0  ,1  ,1 ,1   ,138  ,214  ,0  ,108  ,1.5  ==> 1')	
     if pr2:
         hrt_pred = model_Heart.predict(df_hrt)
         if (hrt_pred[0]==1):
