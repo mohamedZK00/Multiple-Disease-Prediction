@@ -241,8 +241,6 @@ if (selected == 'Parkinsons Prediction'):
     #st.image("imageMultipledisease\Parkinsons_hmage.jpg")
     image_path6 = r'imageMultipledisease/Parkinsons_hmage.jpg'
 	
-    st.write('119.992,  21.033,   -4.813031 ,   0.266482 ,    0.284654 -> 1')
-    st.write('214.289 , 21.209,   -5.724056 ,   0.190667 ,    0.148569 -> 0')
     
 # فتح الصورة وعرضها باستخدام Streamlit
     try:
@@ -320,6 +318,9 @@ if (selected == 'Parkinsons Prediction'):
     #creating button of prediction
     pr3 = st.button("Parkinson's Test Result")
 
+    st.write('111.555,	20.651,  -4.443179,  0.311173,  0.332634  ==> 0')
+    st.write('197.079, 	32.684 , -7.695734 , 0.178540, 	0.056141  ==> 1')
+	
     if pr3:
         prk_prd = model_Parkinsons.predict(df_prk)
         if (prk_prd[0] == 1):
