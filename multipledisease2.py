@@ -335,7 +335,7 @@ if (selected == 'Parkinsons Prediction'):
             
 
         else:
-            park_pred = "The person dose not have Parkinson's disease"
+            park_pred = "The person dose 'Not' have Parkinson's disease"
             st.success(park_pred)
             st.info("""
         Wonderful news! You are not diagnosed with Parkinson's disease.
