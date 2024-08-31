@@ -260,7 +260,7 @@ if (selected == 'Parkinsons Prediction'):
     #col1,col2,col3,col4,col5 = st.columns(5)
     col1,col2 = st.columns(2)
     with col1:
-        f1 =  st.text_input("MDVP Fo(Hz)") 
+        f1 =  st.text_input("MDVP:Fo(Hz)") 
     with col2:
         f2 =  st.text_input("HNR")
     with col1:
@@ -304,7 +304,7 @@ if (selected == 'Parkinsons Prediction'):
    # with col2:
       #  f22 = st.text_input("PPE")   
         
-    df_prk = pd.DataFrame({'MDVP Fo(Hz)':f1,'HNR':f2,'spread1':f3,
+    df_prk = pd.DataFrame({'MDVP:Fo(Hz)':f1,'HNR':f2,'spread1':f3,
                           'spread2':f4,'PPE':f5 },index=[0])
                          #  'MDVP RAP':f6,'MDVP PPQ':f7,'jitter DDP':f8,
                          #  'MDVP Shimmer':f9,'MDVP Shimmer(dB)':f10,'Shimmer APQ3':f11,'Shimmer APQ5':f12,
