@@ -49,6 +49,7 @@ with st.sidebar:
     
 
 # Diabetes Prediction page
+
 if(selected == 'Diabetes Prediction'):
     # page title
     st.title("Diabetes Prediction using Machine Learning(ML)")
@@ -91,7 +92,9 @@ if(selected == 'Diabetes Prediction'):
     
     #creating button of prediction
     pr = st.button("Diabetes Test Result")
-    
+
+    st.write('0	        118	84	47	230	45.8	0.551	31	1')
+    st.write('10	139	80	0	0	27.1	1.441	57	0')	
     if pr :
         diab_pred = model_Diabetes.predict(df_diab)
         if (diab_pred[0] == 1):
