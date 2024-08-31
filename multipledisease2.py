@@ -92,9 +92,10 @@ if(selected == 'Diabetes Prediction'):
     
     #creating button of prediction
     pr = st.button("Diabetes Test Result")
-
-    st.write('0	        118	84	47	230	45.8	0.551	31	1')
-    st.write('10	139	80	0	0	27.1	1.441	57	0')	
+	
+    st.write('6  ,148  ,72  ,35  ,0  ,33.6 ,0.627  ,50 ==> 1')
+    st.write('1  ,85  ,66  ,29  ,0  ,26.6  ,0.351  ,31 ==> 0')
+	
     if pr :
         diab_pred = model_Diabetes.predict(df_diab)
         if (diab_pred[0] == 1):
@@ -142,8 +143,7 @@ if(selected == 'Diabetes Prediction'):
 
 
 # Heart Disease page
-st.write('1 , 1  ,2  ,0  ,2  ,37  ,130  ,283  ,0  ,98   ,0.0  ==> 0')
-st.write('0  ,0  ,1  ,1  ,1  ,48  ,138  ,214  ,0  ,108  ,1.5  ==> 1')
+
 if (selected =='Heart Disease Prediction' ):
     st.title("Heart Disease Prediction using Machine Learning(ML)")
     #st.image("E:\Pro_Stremlit بالعربي\image\heart_Disease_image.png")
@@ -193,7 +193,9 @@ if (selected =='Heart Disease Prediction' ):
     
     #creating button of prediction
     pr2 = st.button("Heart Test result")
-	
+
+    st.write('1 , 1  ,2  ,0  ,2  ,37  ,130  ,283  ,0  ,98   ,0.0  ==> 0')
+    st.write('0  ,0  ,1  ,1  ,1  ,48  ,138  ,214  ,0  ,108  ,1.5  ==> 1')	
     if pr2:
         hrt_pred = model_Heart.predict(df_hrt)
         if (hrt_pred[0]==1):
