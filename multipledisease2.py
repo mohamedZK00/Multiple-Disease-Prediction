@@ -93,8 +93,8 @@ if(selected == 'Diabetes Prediction'):
     #creating button of prediction
     pr = st.button("Diabetes Test Result")
 	
-    st.write('this data is for testing ,6  ,148  ,72  ,35  ,0  ,33.6 ,0.627  ,50 ==> 1')
-    st.write('this data is for testing ,1  ,85  ,66  ,29  ,0  ,26.6  ,0.351  ,31 ==> 0')
+    st.write('this data is for testing  6  ,148  ,72  ,35  ,0  ,33.6 ,0.627  ,50 ==> 1')
+    st.write('this data is for testing  1  ,85  ,66  ,29  ,0  ,26.6  ,0.351  ,31 ==> 0')
 	
     if pr :
         diab_pred = model_Diabetes.predict(df_diab)
@@ -194,8 +194,8 @@ if (selected =='Heart Disease Prediction' ):
     #creating button of prediction
     pr2 = st.button("Heart Test result")
 
-    st.write('this data is for testing ,37age  ,1 , 1  ,2  ,0  ,2  ,130  ,283  ,0  ,98   ,0.0  ==> 0')
-    st.write('this data is for testing ,48age  ,0  ,0  ,1  ,1 ,1   ,138  ,214  ,0  ,108  ,1.5  ==> 1')	
+    st.write('this data is for testing  37age  ,1 , 1  ,2  ,0  ,2  ,130  ,283  ,0  ,98   ,0.0  ==> 0')
+    st.write('this data is for testing  48age  ,0  ,0  ,1  ,1 ,1   ,138  ,214  ,0  ,108  ,1.5  ==> 1')	
     if pr2:
         hrt_pred = model_Heart.predict(df_hrt)
         if (hrt_pred[0]==1):
@@ -327,8 +327,8 @@ if (selected == 'Parkinsons Prediction'):
     #creating button of prediction
     pr3 = st.button("Parkinson's Test Result")
 
-    st.write('this data is for testing ,111.555,20.651,  -4.443179,  0.311173,  0.332634  ==> 0')
-    st.write('this data is for testing ,197.079, 32.684 , -7.695734 , 0.178540, 0.056141  ==> 1')
+    st.write('this data is for testing  111.555,20.651,  -4.443179,  0.311173,  0.332634  ==> 0')
+    st.write('this data is for testing  197.079, 32.684 , -7.695734 , 0.178540, 0.056141  ==> 1')
 	
     if pr3:
         prk_prd = model_Parkinsons.predict(df_prk)
